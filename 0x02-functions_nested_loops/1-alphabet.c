@@ -8,7 +8,7 @@
 int print_alphabet(void)
 {
 char c;
-for (c = 97; c < 112; c++)
+for (c = 97; c < 173; c++)
 {
 _putchar(c);
 }
