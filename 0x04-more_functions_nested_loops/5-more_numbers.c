@@ -1,11 +1,11 @@
 #include <stdio.h>
 
 /**
- * print_most_numbers - function to print 0-9 with the exception of 2&4
+ * more_numbers - function to print 0-14 ten times
  *
  * Return: 0
  */
-void print_most_numbers(void)
+void more_numbers(void)
 {
 int c, j;
 for (j = 0; j <= 10; j++)
