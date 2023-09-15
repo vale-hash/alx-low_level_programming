@@ -5,14 +5,15 @@
  * @size: the size of the triangle
  */
 void print_triangle(int size)
-{
+{int row;
+int column;
+
+
 if (size <= 0)
 {
 _putchar('\n');
 return;
 }
-
-int row, column;
 
 for (row = 1; row <= size; row++)
 {
