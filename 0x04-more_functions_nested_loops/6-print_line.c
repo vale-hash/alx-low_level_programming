@@ -1,4 +1,4 @@
-#include <stdio.h>
+#include "main.h"
 
 /**
  * print_line - function to print a line as many tim as n
@@ -10,7 +10,8 @@ void print_line(int n)
 int c;
 for (c = 1; c <= n - 1; c++)
 {
-putchar(95);
+_putchar(95);
+_putchar('\n');
 }
-putchar('\n');
+_putchar('\n');
 }
