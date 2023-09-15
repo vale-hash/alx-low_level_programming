@@ -11,7 +11,10 @@ int c;
 for (c = 1; c <= n - 1; c++)
 {
 _putchar(95);
+if (n <= 0)
+{
 _putchar('\n');
+}
 }
 _putchar('\n');
 }
