@@ -8,7 +8,7 @@
 void print_line(int n)
 {
 int c;
-for (c = 1; c <= n - 1; c++)
+for (c = 1; c <= n; c++)
 {
 _putchar(95);
 if (n <= 0)
