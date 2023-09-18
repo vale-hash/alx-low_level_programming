@@ -13,4 +13,5 @@ for (i = 0; s[i] != '\0'; ++i)
 c = (s[i]);
 _putchar(c);
 }
+return (c);
 }
