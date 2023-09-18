@@ -10,10 +10,12 @@ int i;
 char c;
 for (i = 0; str[i] != '\0'; i = i + 2)
 {
-if (str[i] != '\0')
-{c = str[i];
-_putchar (c);
+if (str[i] == '\\')
+{
+break;
 }
+c = str[i];
+_putchar (c);
 }
 _putchar('\n');
 }
