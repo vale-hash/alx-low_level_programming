@@ -10,7 +10,7 @@ int i;
 char c;
 for (i = 0; str[i] != '\0'; i = i + 2)
 {
-while (str[i] != '\0')
+if (str[i] != '\0')
 {c = str[i];
 _putchar (c);
 }
