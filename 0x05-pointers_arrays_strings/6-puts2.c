@@ -13,9 +13,9 @@ for (i = 0; str[i] != '\0'; i = i + 2)
 if (str[i] == '\\')
 {
 break;
-}
 c = str[i];
 _putchar (c);
 }
 _putchar('\n');
+}
 }
