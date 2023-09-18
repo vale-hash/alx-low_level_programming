@@ -13,7 +13,7 @@ for (i = 0; s[i] != '\0'; i++)
 
 }
 
-for (d = i; d != 0; d--)
+for (d = i; d >= 0; d--)
 {
 c = s[d];
 _putchar(c);
