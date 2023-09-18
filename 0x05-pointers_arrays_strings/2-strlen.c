@@ -10,7 +10,7 @@ int i;
 char c;
 for (i = 0; s[i] != '\0'; i++)
 {
-c = (s[i]);
+c = (s[i - 1]);
 _putchar(c);
 }
 return (0);
