@@ -13,6 +13,4 @@ for (i = 0; s[i] != '\0'; ++i)
 c = (s[i]);
 _putchar(c);
 }
-_putchar('\n');
-return (0);
 }
