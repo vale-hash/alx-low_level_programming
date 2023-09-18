@@ -10,8 +10,10 @@ int i;
 char c;
 for (i = 0; str[i] != '\0'; i = i + 2)
 {
-c = str[i];
+if (str[i] == '\0')
+{c = str[i];
 _putchar (c);
+}
 }
 _putchar('\n');
 }
