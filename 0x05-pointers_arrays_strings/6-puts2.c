@@ -15,6 +15,7 @@ if (i % 2 == 0)
 c = str[i];
 _putchar (c);
 }
-_putchar('\n');
 }
+_putchar ('\n');
 }
+
