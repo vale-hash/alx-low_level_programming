@@ -1,8 +1,17 @@
 #include "main.h"
+
 /**
- *_isdigit -finds out if a character is a digit between 1-9  or not
- *@c: - Character that is checked
- *
- * Return: 1 if c is lowercase 0 if its not
+ * _puts - prints a string on screen.
+ * @str: pointer to the string to print.
  */
-void _puts(char *s);
+
+void _puts(char *str)
+{
+	int i;
+
+	for (i = 0; str[i] != '\0'; i++)
+	{
+		_putchar(str[i]);
+	}
+	_putchar('\n');
+}
