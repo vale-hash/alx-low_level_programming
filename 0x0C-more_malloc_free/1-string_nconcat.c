@@ -15,7 +15,6 @@ p = malloc(b);
 
 	if (p == NULL)
 	{
-		free(p);
 		exit(98);
 	}
 return (p);
