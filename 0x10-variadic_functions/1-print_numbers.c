@@ -23,7 +23,7 @@ for (int i = 0; i < n; i++)
 v = va_arg(param, int);
 printf("%d", v);
 
-if (i < n - 1)
+if (separator && i < n - 1)
 {
 printf("%s", separator);
 }
