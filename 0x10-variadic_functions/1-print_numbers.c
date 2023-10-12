@@ -9,7 +9,7 @@
  */
 void print_numbers(const char *separator, const unsigned int n, ...)
 {
-unsigned int v;
+int v;
 if (separator == NULL)
 {
 separator = "";
@@ -20,8 +20,8 @@ va_start(param, n);
 
 for (int i = 0; i < n; i++)
 {
-v = va_arg(param, unsigned int);
-printf("%u", v);
+v = va_arg(param, int);
+printf("%d", v);
 
 if (i < n - 1)
 {
