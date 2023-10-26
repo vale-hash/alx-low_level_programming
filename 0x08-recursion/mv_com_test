@@ -1,0 +1,4 @@
+#!/bin/bash
+find . -type f -name "mv_com_test" -prune -o -type f -perm 755 -exec mv -t ./compiled/ {} +
+mv *main.c tests/
+
