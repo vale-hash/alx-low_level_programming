@@ -1,6 +1,7 @@
 #include "main.h"
 #include <stdio.h>
 #include <stdlib.h>
+
 /**
  * *main - function that  multiplies two numbers..
  * @argv: counter for arguements or flags starts at 0
@@ -8,33 +9,29 @@
  * Return: returns 0
  */
 
-
 int main(int argc, char *argv[])
 {
-int result = 0;
+	int x;
+	int y;
+	int add;
 
-if (argc == 1)
-{
-printf("0\n");
-return (0);
+	(void)argv;
+	add = 0;
+	if (argc > 1)
+	{
+		for (x = 1; x < argc; x++)
+		{
+			for (y = 0; argv[x][y] != '\0'; y++)
+			{
+				if (!isdigit(argv[x][y]))
+				{
+					printf("Error\n");
+					return (1);
+				}
+			}
+			add += atoi(argv[x]);
+		}
+	}
+	printf("%d\n", add);
+	return (0);
 }
-
-for (int i = 1; i < argc; i++)
-{
-char *endptr;
-long num = strtol(argv[i], &endptr, 10);
-
-if (*endptr != '\0' || num <= 0)
-{
-printf("Error\n");
-return (1);
-}
-
-result += (int)num;
-}
-
-printf("%d\n", result);
-return (0);
-}
-
-
