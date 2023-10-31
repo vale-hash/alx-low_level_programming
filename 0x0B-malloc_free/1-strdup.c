@@ -8,28 +8,25 @@
 
 char *_strdup(char *str)
 {
-unsigned int i,j;
+unsigned int i, j;
 char *s;
 	if (str == NULL)
 	{
-		return(NULL);
+		return (NULL);
 	}
-	
 	for (i = 0; str[i] != 0; i++)
 	{
 		/*get the len of str as i*/
 	}
-
-
-	s = malloc(sizeof(char)*i);
+	s = malloc((sizeof(char) * i ) + 1);
 		if (s == NULL)
 	{
-		return(NULL);
-	}	
-	for(j = 0; j < i ; j++)
+		return (NULL);
+	}
+	for (j = 0; j < i ; j++)
 	{
 		s[j] = str[j];
-	} 
+	}
 
 	return (s);
 	free(s);
