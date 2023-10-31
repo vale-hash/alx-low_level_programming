@@ -1,9 +1,10 @@
 #include <stdlib.h>
 #include "main.h"
 /**
+ * create_array - function to dynamically allocate an array
  *
- *
- *
+ * @c:the char to initialize the array
+ * @size:the size of the array
  */
 
 char *create_array(unsigned int size, char c)
