@@ -16,7 +16,7 @@ char *p;
 	if (nmemb <= 0 || size <= 0)
 		return (NULL);
 	
-	s = malloc(sizeof(size) * nmemb);
+	s = malloc(sizeof(size * nmemb));
 		if (s == NULL)
 	{
 		return (NULL);
