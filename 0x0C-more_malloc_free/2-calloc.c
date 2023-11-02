@@ -20,7 +20,6 @@ char *p;
 		if (s == NULL)
 	{
 		return (NULL);
-		exit (98);
 	}
 	
 	p = (char *)s;
