@@ -6,11 +6,22 @@
  * @age :the age of the dog
  * @name: dogs name
  */
-typedef struct Dog
+#include <stdio.h>
+#include <stdlib.h>
+
+typedef struct dog
 {
 	char *owner;
 	char *name;
 	float age;
-} dog;
+}dog;
+
+void init_dog(struct dog *d, char *name, float age, char *owner);
+void print_dog(struct dog *d);
+typedef dog dog_t;
+
+
+
+
 
 #endif
